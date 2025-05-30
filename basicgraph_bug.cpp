@@ -68,7 +68,7 @@ void translateToMiddle(GLfloat xCenter, GLfloat yCenter, GLfloat zCenter) {
 }
 
 void scale(float ratio) {
-	for (int i == 0; i != myVertices.size(); ++i) { 
+	for (int i == 0; i != myVertices.size(); ++i) { //bug here! 
 		myVertices[i] *= ratio;
 	}
 }//bug here!
