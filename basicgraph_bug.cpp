@@ -7,7 +7,7 @@
 #include "glm.h"
 #include <cfloat>
 #include <vector>
-// HOLA
+
 #pragma comment (lib, "glew32.lib")
 #pragma comment (lib, "freeglut.lib")
 
@@ -68,10 +68,10 @@ void translateToMiddle(GLfloat xCenter, GLfloat yCenter, GLfloat zCenter) {
 }
 
 void scale(float ratio) {
-	for (int i == 0; i != myVertices.size(); ++i) {
+	for (int i == 0; i != myVertices.size(); ++i) { 
 		myVertices[i] *= ratio;
 	}
-}
+}//bug here!
 
 void readModelToVector() {
 	for (int i = 0; i != (int)OBJ->numtriangles; ++i)
